@@ -1,0 +1,464 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* nav container start */
+
+nav{
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0px;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+}
+
+#navoption{
+    margin-left: -100px;
+}
+
+.option{
+    list-style: none;
+    float: left;
+    margin: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(234, 233, 233);
+    position: relative;
+}
+
+sup{
+    color: red;
+    font-size: 9px;
+}
+
+#men{
+    position: relative;
+    display: inline-block;
+}
+
+.inside{
+    list-style: none;
+    margin: 5px;
+    padding: 20px;
+    width: 200px;
+    
+}
+
+.inside a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    display: block;
+}
+
+#mencontainer{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 61px;
+    box-shadow:  0px 16px 16px 16px rgba(0,0,0,0.5);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#men:hover #mencontainer{
+    display: flex;
+}
+
+li button{
+    background-color: transparent;
+    border: none;
+    color: rgb(234, 233, 233);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#logo{
+    padding-top: 7px;
+}
+
+
+#searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    background-color: rgb(169, 169, 169);
+    box-sizing: border-box;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#searchbox i{
+    font-size: 25px;
+    border: none;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+input{
+    width: 500px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    margin-left: -5px;
+    font-size: 13px;
+    background-color: rgb(169, 169, 169);
+
+}
+
+input:focus{
+    outline: none;
+}
+
+
+#img{
+    width: 150px;
+    height: 60px;
+}
+
+
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usertext{
+    margin: 0px;
+    font-size: 13px;
+}
+
+#studio{
+    position: relative;
+}
+
+#profile{
+    position: relative;
+}
+
+/* #studio::after{
+    content: "NEW";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    color: rgb(255, 12, 12);
+    left: 60px;
+} */
+
+#men:focus::after{
+    content: "";
+    background-color: red;
+    width: 39px;
+    height: 2px;
+    position: absolute;
+    bottom: -45px;
+    left: 3px;
+    
+}
+
+#women:hover::after{
+    content: "";
+    background-color: rgb(253, 77, 106);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    bottom: -45px;
+    left: -3px;
+}
+
+#kids:hover::after{
+    content: "";
+    background-color: red;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: -45px;
+    left: -3px;
+}
+
+#home:hover::after{
+    content: "";
+    background-color: red;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    bottom: -45px;
+    left: -3px;
+}
+
+#beauty:hover::after{
+    content: "";
+    background-color: red;
+    width: 65px;
+    height: 2px;
+    position: absolute;
+    bottom: -45px;
+    left: -5px;
+}
+
+#studio:hover::after{
+    content: "";
+    background-color: red;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    bottom: -43px;
+    left: -3px;
+}
+
+#profile:hover::after{
+    content: "";
+    background-color: red;
+    width: 46px;
+    height: 2px;
+    position: absolute;
+    bottom: -35px;
+    left: -3px;
+}
+
+#profile:hover #profilecontainer{
+    display: block;
+}
+
+#profilecontainer{
+    background-color: black;
+    display: none;
+    position: absolute;
+    top: 70px;
+    border-radius: 4px;
+    width: 300px;
+    padding: 20px;
+    z-index: 1;
+}
+
+#welcome{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#normaltext{
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+#loginbtn{
+    background-color: transparent;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#profilecontainer ul{
+    margin: 20px auto;
+}
+
+
+#profilecontainer li{
+    list-style: none;
+    font-weight: 100;
+    margin: 5px; 
+}
+
+#profilecontainer ul{
+    padding-left: 0px;
+    margin-left: 10px;
+}
+
+#profilecontainer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* nav container end */
+
+/* coupouns container start */
+
+#coupouns{
+    text-align: center;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+#coupouns img{
+    width: 1600px;
+    height: 180px;
+    
+}
+
+/* coupouns container end */
+
+
+
+/* imageslider start  */
+
+.imgg{
+    margin: auto 50px;
+    cursor: pointer;
+}
+
+
+.images{
+    width: 100%;
+    height: 400px;
+
+}
+
+#slider2{
+   display: none;
+}
+
+#slider3{
+    display: none;
+}
+
+#slider4{
+    display: none;
+}
+
+
+/* imagesslider end */
+
+
+
+/* dotcontaienr start */
+#dotcontainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.dot{
+    background-color: rgb(237, 237, 237);
+    border: 2px solid transparent;
+    width: 5px;
+    height: 5px;
+    margin: auto 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.dot:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+
+.click{
+    background-color:rgb(192, 192, 192);
+}
+
+/* dotcontaienr end */
+
+
+/* specialcoupouns start */
+
+#specialcoupouns img{
+    height: 80px;
+    width: 100%;
+
+}
+
+#scnew{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sc{
+    width:800px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/* specialcoupouns end */
+
+
+#crazydeals img{
+    height: 80px;
+    width: 100%;
+}
+
+.imgdeal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal{
+    width: 300px;
+    height: 350px;
+    cursor: pointer;
+}
+
+#shopbycate img{
+    width: 100%;
+    height: 80px;
+}
+
+.category{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shopby{
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+}
+
+
+.categorylast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lastshopby{
+    width: 250px;
+    height: 300px;
+    margin: auto 40px;
+    cursor: pointer;
+}
+
+
+footer img{
+    width: 1680px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
